@@ -34,7 +34,7 @@ class Vehicle {
     }
 
     findReviewByTester(tester) {
-        return this.reviews.filter(review => review.tester.name === tester)[0]
+        return this.reviews.find(review => review.tester.name === tester)
     }
 }
 
