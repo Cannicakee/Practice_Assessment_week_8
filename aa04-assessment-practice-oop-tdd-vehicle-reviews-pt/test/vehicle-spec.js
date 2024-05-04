@@ -6,7 +6,7 @@ const ElectricBicycle = require("../class/electric-bicycle.js");
 const Review = require("../class/review.js");
 const Tester = require("../class/tester.js");
 
-describe ('Classes, Constructors and Inheritance', function () {
+describe('Classes, Constructors and Inheritance', function () {
 
     it('VEHICLE: should set model name, year, and price attributes on creation', function () {
 
@@ -105,7 +105,7 @@ describe ('Classes, Constructors and Inheritance', function () {
 });
 
 
-describe ('Validating Data', function () {
+describe('Validating Data', function () {
 
     it("Vehicle should not be valid unless the model name, price, and year have been set", function () {
         let validVehicle = new Vehicle("Toyota Prius", 2005, 23000);
@@ -125,7 +125,7 @@ describe ('Validating Data', function () {
 });
 
 
-describe ('Updating Data and Handling Errors', function () {
+describe('Updating Data and Handling Errors', function () {
 
     it('can update multiple details for a vehicle at once', function () {
 
@@ -162,7 +162,7 @@ describe ('Updating Data and Handling Errors', function () {
     });
 });
 
-describe ('Data Manipulation - Instance and Static Methods', function () {
+describe('Data Manipulation - Instance and Static Methods', function () {
 
     it('should return a summary of a vehicle\'s details', function () {
 
@@ -249,7 +249,7 @@ describe ('Data Manipulation - Instance and Static Methods', function () {
 });
 
 
-describe ('Class Interactions - Submitting a Review', function () {
+describe('Class Interactions - Submitting a Review', function () {
 
     it('tester can submit review for valid vehicle', function () {
 
