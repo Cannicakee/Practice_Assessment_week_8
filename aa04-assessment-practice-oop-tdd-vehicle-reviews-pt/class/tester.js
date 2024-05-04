@@ -15,9 +15,7 @@ class Tester {
         if (!vehicle.validate()) throw new Error("Cannot submit review for invalid vehicle.")
 
         let newReview = new Review(vehicle, this, starRating, text)
-        this.reviews.push(newReview)
-        vehicle.reviews.push(newReview)
-
+        newReview.addReview()
 
         if (vehicle instanceof ElectricBicycle) {
             this.eBikeTester = true
